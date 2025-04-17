@@ -35,7 +35,7 @@ function App() {
             Uint8Array(215) [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 3, 49, 110, 151, 127, 17, 119, 34, 84, 212, 251, 186, 105, 24, 244, 237, 24, 57, 190, 102, 68, 225, 253, 8, 117, 208, 154, 62, 26, 24, 252, 207, …][0 … 99][100 … 199][200 … 214]offset: (...)parent: (...)buffer: ArrayBuffer(215)byteLength: 215byteOffset: 0length: 215Symbol(Symbol.toStringTag): "Uint8Array"[[Prototype]]: Uint8Array
       */
 
-      await axios.post("/api/v1/txn/sign",{
+      await axios.post("http://localhost:3000/api/v1/txn/sign",{
         message: serailTx,
         retry: false
       })
